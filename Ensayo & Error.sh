@@ -1,6 +1,6 @@
 #Ensayo & Eror. / Rodrigo Pérez / 1er Sprint - Netlabs Academy 7a Edicion.
 
- 	estrellas=0
+ 	estrellas=50
 	errores=0
 	op=""
 	dificultad=1
@@ -70,6 +70,20 @@
 			operacionesAritmericas
 		elif [[ $respuestaUsuario == 0 ]]
 		then
+			case $dificultad in
+				1)
+					estrellas=$((estrellas-1))
+				;;
+				2)
+					estrellas=$((estrellas-2))
+				;;
+				3)
+					estrellas=$((estrellas-3))
+				;;
+				4)
+					estrellas=$((estrellas-4))
+				;;
+			esac
 			inicio
 		elif [[ $respuestaUsuario == 00 ]]
 		then
