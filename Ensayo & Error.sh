@@ -1,6 +1,6 @@
 #Ensayo & Eror. / Rodrigo Pérez / 1er Sprint - Netlabs Academy 7a Edicion.
 
- 	estrellas=50
+ 	estrellas=0
 	errores=0
 	op=""
 	dificultad=1
@@ -31,32 +31,32 @@
 		done
 		if [[ $errores == 2 ]]
 		then
-		case $dificultad in
-			1)
-				estrellas=$((estrellas-1))
-			;;
-			2)
-				estrellas=$((estrellas-2))
-			;;
-			3)
-				estrellas=$((estrellas-3))
-			;;
-			4)
-				estrellas=$((estrellas-4))
-			;;
-		esac
-				case $operacionElegida in
-					3)
-						echo -e 'La resolucion del problema era' $operadorUno 'sumado por si mismo' $operadorDos 'veces -->' $operadorUno $operador $operadorDos '=' $resultadoReal '\n\nIntenta con otro problema.	'
-					;;
-					4)
-						echo -e 'Para resolver este problema hay que contar cuantas veces entra' $operadorDos 'en' $operadorUno ', entonces -->' $operadorUno $operador $operadorDos '=' $resultadoReal  '\n\nIntenta con otro problema.'
-					;;
-					*)
-						echo -e 'La resolucion del problema era' $operadorUno $operador $operadorDos '=' $resultadoReal ', has perdido una estrella, ahora tienes' $estrellas 'estrella/s\n'
-					;;
+			case $dificultad in
+				1)
+					estrellas=$((estrellas-1))
+				;;
+				2)
+					estrellas=$((estrellas-2))
+				;;
+				3)
+					estrellas=$((estrellas-3))
+				;;
+				4)
+					estrellas=$((estrellas-4))
+				;;
+			esac
+			case $operacionElegida in
+				3)
+					echo -e 'La resolucion del problema era' $operadorUno 'sumado por si mismo' $operadorDos 'veces -->' $operadorUno $operador $operadorDos '=' $resultadoReal '\n\nIntenta con otro problema.	'				
+				;;
+				4)
+					echo -e 'Para resolver este problema hay que contar cuantas veces entra' $operadorDos 'en' $operadorUno ', entonces -->' $operadorUno $operador $operadorDos '=' $resultadoReal  '\n\nIntenta con otro problema.'
+				;;
+				*)
+					echo -e 'La resolucion del problema era' $operadorUno $operador $operadorDos '=' $resultadoReal ', has perdido una estrella, ahora tienes' $estrellas 'estrella/s\n'
+				;;
 				esac
-			operacionesAritmericas
+				operacionesAritmericas
 		fi
 	}
 
