@@ -1,6 +1,6 @@
 #Ensayo & Eror. / Rodrigo Pérez / 1er Sprint - Netlabs Academy 7a Edicion.
 
- 	estrellas=0
+ 	estrellas=100
 	errores=0
 	op=""
 	dificultad=1
